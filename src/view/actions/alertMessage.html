@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <title>Action</title>
+    <link rel="stylesheet" href="../global.css">
   </head>
   <body>
     <form>
@@ -47,9 +48,13 @@
 
         validate: function() {
           // TODO Return whether settings are valid.
-          var valid = true;
+          var valid = false;
           visitorName: document.querySelector('#visitorName').value;
           message: document.querySelector('#message').value;
+
+          if (visitorName && message) {
+            valid = true;
+          }
 
           if (!valid) {
             document.querySelector('#ifNotValid').style.display = 'block';
