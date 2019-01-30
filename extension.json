@@ -1,0 +1,37 @@
+{
+  "displayName": "Alert Message",
+  "name": "alert-message",
+  "platform": "web",
+  "version": "1.0.0",
+  "description": "Give Alert message after a configured time delay",
+  "author": {
+    "name": "Karen"
+  },
+  "viewBasePath": "src/view/",
+  "events": [
+    {
+      "displayName": "delay",
+      "name": "delay",
+      "schema": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "type": "object",
+        "properties": {}
+      },
+      "libPath": "src/lib/events/delay.js",
+      "viewPath": "events/delay.html"
+    }
+  ],
+  "actions": [
+    {
+      "displayName": "alert message",
+      "name": "alert-message",
+      "schema": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "type": "object",
+        "properties": {}
+      },
+      "libPath": "src/lib/actions/alertMessage.js",
+      "viewPath": "actions/alertMessage.html"
+    }
+  ]
+}
